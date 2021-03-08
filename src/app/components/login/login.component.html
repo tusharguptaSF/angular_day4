@@ -1,0 +1,22 @@
+<div>
+    
+    <form [formGroup] = "loginform"  class = "loginForm" >
+        <h1>
+            Login
+        </h1>
+        <mat-form-field>
+            <input formControlName = "username"
+                matInput
+                placeholder="User Name">
+        </mat-form-field>
+       
+        <mat-form-field>
+            <input formControlName = "password"
+            type = "password"
+            matInput 
+            placeholder="Password">
+        </mat-form-field>
+        
+        <button mat-raised-button color = "primary" (click) = "userInfo()">Login</button>
+    </form>
+</div>
